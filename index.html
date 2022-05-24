@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Задание №3</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href= "style.css">
+
+</head>
+
+<body>
+    
+    <header>
+ 
+        <h1>Вариант 8</h1>
+        <h2>Бонсай</h2>
+        <button class="but js-open-modal"> Открыть форму</button>
+    </header>
+    <main>  
+
+    <div class="modal">
+        <form id="forma">
+            <p>Вид растения</p>
+            <input class="pole" id="info1" type="text" name="Type" required>
+            <p>Возраст</p>
+            <input class="pole" id="info2" type="number" min ="0" name="Age" required>
+            <fieldset >
+                <legend>Полив</legend>
+            <label> <input type="radio" name="poliv" value="Редкий">
+            Редкий</label>
+            <label> <input type="radio" name="poliv" value="Регулярный">
+            Регулярный</label>
+            <label> <input type="radio" name="poliv" value="Обильный">
+            Обильный</label>
+           </fieldset>
+           <fieldset >
+            <legend>Тип горшка</legend>
+            <label> <input type="radio" name="gorsh" value="Квадратный">
+             Квадратный</label>
+            <label> <input type="radio" name="gorsh" value="Круглый">
+            Круглый</label>
+            </fieldset>
+
+            <p><button class="js-modal-close">Отмена</button></p>
+            <p><input class="push" type="submit"></p>
+
+            
+        </form>
+    </div>
+
+    <div class="overlay overlay-modal"></div>
+    <script src="js.js"> </script>
+    </main>
+  <footer>
+
+    <p>Фукина Александра Дмитриевна</p>
+    <p>Группа 201-324</p>
+
+  </footer>
+
+</body>
+
+</html>
