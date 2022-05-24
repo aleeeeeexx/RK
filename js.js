@@ -1,5 +1,6 @@
 
 
+
         let modalButtons = document.querySelector('.js-open-modal'),
         overlay = document.querySelector('.overlay-modal'),
         closeButtons = document.querySelector('.js-modal-close');
@@ -83,13 +84,13 @@
             let get1 = document.forms[0].elements['Type'].value;
             let get2 = document.forms[0].elements['Age'].value;
             let get3 = document.forms[0].elements['poliv'].value;
-            let get = document.forms[0].elements['gorsh'].value;
+            let get4 = document.forms[0].elements['gorsh'].value;
             
             let data ={
                 Type: get1,
                 Age: get2,
                 poliv:get3,
-                gorsh:get
+                gorsh:get4
 
             };
 
@@ -100,21 +101,10 @@
         overlay.classList.remove('active');
         body.classList.remove('active'); 
 
-        response.SetHeader(200, {'Content-Type': 'application/json'});
-              let json = {
-                Type: get1,
-                Age: get2,
-                poliv: get3,
-                gorsh:get4,
+     
                         
             };
-              response.end(JSON.stringify(json));
-              }
 
-            
-        }  
-       
-    );
 
     closeButtons.addEventListener("click", (e) => {
         event.preventDefault();
@@ -132,5 +122,6 @@
         }
 
     });
+})
 
    

@@ -1,0 +1,21 @@
+{
+  "name": "rk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleeeeeexx/RK.git"
+  },
+  "author": "Alexandra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aleeeeeexx/RK/issues"
+  },
+  "homepage": "https://github.com/aleeeeeexx/RK#readme"
+}
